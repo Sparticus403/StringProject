@@ -10,14 +10,16 @@
 #define StringController_hpp
 
 #include <string>
+using namespace std;
 
 class StringController
 {
 private:
-    int wordLength();
-    std::string wordsAgain = "theese is words";
+    void wordLength();
+    string wordz;
     bool hasWords();
 public:
+    StringController();
     void start();
 };
 

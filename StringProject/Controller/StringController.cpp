@@ -12,23 +12,31 @@
 
 using namespace std;
 
+StringController :: StringController()
+{
+    wordz = "words is here";
+}
+
 void StringController :: start()
 {
-    cout << wordsAgain << endl;
+    cout << wordz << endl;
     
     wordLength();
 }
 
-int StringController :: wordLength()
+void StringController :: wordLength()
 {
-    string str("Words here");
+    int count = wordz.size();
+    cout << "number of words int the string is: " << count << endl;
+    cout << "The size method works like the length method in Java" << endl;
     
-    cout << wordsAgain.size() << endl;
-    
-    return 0;
+    string temp = wordz.substr(3);
+    cout << temp << endl;
 }
 
 bool StringController :: hasWords()
 {
+    
+    
     return false;
 }
