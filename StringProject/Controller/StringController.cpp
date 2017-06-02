@@ -15,6 +15,14 @@ using namespace std;
 StringController :: StringController()
 {
     wordz = "words is here";
+    
+    this-> numberSize = 5;
+    this->numbers = new int[numberSize];
+    buildIntArray();
+    
+    this->moreNumberSize = 5;
+    this->moreNumbers = new double[moreNumberSize];
+    buildDoubleArray();
 }
 
 void StringController :: start()
@@ -40,3 +48,4 @@ bool StringController :: hasWords()
     
     return false;
 }
+

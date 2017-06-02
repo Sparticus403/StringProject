@@ -18,6 +18,12 @@ private:
     void wordLength();
     string wordz;
     bool hasWords();
+    int * numbers;
+    int numberSize;
+    void buildIntArray();
+    double * moreNumbers;
+    int moreNumberSize;
+    void buildDoubleArray();
 public:
     StringController();
     void start();
